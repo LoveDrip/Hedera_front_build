@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ubuntu/nodejs-aws-codedeploy-pipeline
+    destination: /home/ubuntu/Hedera_front_build
 hooks:
 # ApplicationStop:
 # DownloadBundle:
