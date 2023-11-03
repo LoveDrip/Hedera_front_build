@@ -1,26 +1,22 @@
 version: 0.0
 os: linux
 files:
-  - source: /aws
-    destination: /usr/local/codedeployresources
+  - source: /
+    destination: /home/ubuntu/nodejs-aws-codedeploy-pipeline
 hooks:
-  ApplicationStop:
-    - location: aws/scripts/application-stop.sh
-      timeout: 300
-      runas: root
-  BeforeInstall:
-    - location: aws/scripts/before-install.sh
-      timeout: 300
-      runas: root
+# ApplicationStop:
+# DownloadBundle:
+#  BeforeInstall:
+#    - location: scripts/before_install.sh
+#      timeout: 300
+#      runas: root
+# Install:
   AfterInstall:
-    - location: aws/scripts/after-install.sh
+    - location: scripts/after_install.sh
       timeout: 300
       runas: root
   ApplicationStart:
-    - location: aws/scripts/application-start.sh
+    - location: scripts/application_start.sh
       timeout: 300
       runas: root
-  ValidateService:
-    - location: aws/scripts/validate-service.sh
-      timeout: 300
-      runas: root
+# ValidateService:
