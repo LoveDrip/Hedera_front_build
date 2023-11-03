@@ -1,8 +1,8 @@
 #!/bin/bash
-echo 'run after_install.sh: ' >> /home/ubuntu/nodejs-aws-codedeploy-pipeline/deploy.log
+echo 'run after_install.sh: ' >> /home/ubuntu/Hedera_front_build/deploy.log
 
-echo 'cd /home/ubuntu/nodejs-server-cicd' >> /home/ubuntu/nodejs-aws-codedeploy-pipeline/deploy.log
-cd /home/ubuntu/nodejs-aws-codedeploy-pipeline >> /home/ubuntu/nodejs-aws-codedeploy-pipeline/deploy.log
+echo 'cd /home/ubuntu/Hedera_front_build' >> /home/ubuntu/Hedera_front_build/deploy.log
+cd /home/ubuntu/Hedera_front_build >> /home/ubuntu/Hedera_front_build/deploy.log
 
-echo 'npm install' >> /home/ubuntu/nodejs-aws-codedeploy-pipeline/deploy.log 
-npm install >> /home/ubuntu/nodejs-aws-codedeploy-pipeline/deploy.log
+echo 'npm install' >> /home/ubuntu/Hedera_front_build/deploy.log 
+npm install >> /home/ubuntu/Hedera_front_build/deploy.log
